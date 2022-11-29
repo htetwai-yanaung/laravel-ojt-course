@@ -7,6 +7,10 @@ git branch
 git branch <branch>
 git checkout main
 git checkout -b branch name
+git restore --staged . 
+git restore . 
+git clean -f => delete file 
+git clean -fd => delete file/folder 
 
 
 
