@@ -1,12 +1,32 @@
-git init
-git add .
-git status
-git commit -m "first commit"
-git log
-git branch
-git branch <branch>
-git checkout main
-git checkout -b branch name
+git init                        => Initializing a new Git repository
+git add .                       => add all files
+git status                      => show whether committed or not
+git commit -m "first commit"    => add new commit
+git log                         => show list of commit
+git log --oneline               => short list of all commits
+git log --oneline -n 2          => short list of 2 commits
+git branch                      => show branch list
+git branch <branch>             => create new branch
+git checkout main               => switch between exist branches
+git checkout -b branch name     => create and switch to a new branch
+git push -u origin branchName   => push git repository to remove server 
+
+git stash                       => store uncommitted files 
+git stash apply                 => get uncommitted files
+
+git remote -v                   => list of remote connections
+git remote rm <name>            => reomve the connection
+git fetch origin                => make connection with remote server for others
+git restore --staged .          => restore after added 
+git restore .                   => restore modified file / undo
+git clean -f                    => delete file 
+git clean -fd                   => delete file/folder 
+
+git reset --hard <commit code>  => delete commit
+
+PULL REQUEST 
+1. git checkout <branch>
+2. git pull 
 
 
 
@@ -14,15 +34,3 @@ git checkout -b branch name
 
 
 
-
-echo "# laravel-ojt-course" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/htetwai-yanaung/laravel-ojt-course.git
-git push -u origin main
-
-git remote add origin https://github.com/htetwai-yanaung/laravel-ojt-course.git
-git branch -M main
-git push -u origin main
