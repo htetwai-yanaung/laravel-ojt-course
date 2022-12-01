@@ -3,15 +3,28 @@ git add .
 git status
 git commit -m "first commit"
 git log
+git log --oneline
+git log --oneline -n 2
 git branch
 git branch <branch>
 git checkout main
 git checkout -b branch name
+git push -u origin branchName 
+
+git stash 
+git stash apply 
+
+git fetch origin 
 git restore --staged . 
 git restore . 
 git clean -f => delete file 
 git clean -fd => delete file/folder 
 
+git reset --hard <commit code>
+
+PULL REQUEST 
+1. git checkout <branch>
+2. git pull 
 
 
 
@@ -19,14 +32,3 @@ git clean -fd => delete file/folder
 
 
 
-echo "# laravel-ojt-course" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/htetwai-yanaung/laravel-ojt-course.git
-git push -u origin main
-
-git remote add origin https://github.com/htetwai-yanaung/laravel-ojt-course.git
-git branch -M main
-git push -u origin main
