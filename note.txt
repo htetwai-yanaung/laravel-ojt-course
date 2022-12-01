@@ -16,9 +16,9 @@ git stash apply                 => get uncommitted files
 
 git remote -v                   => list of remote connections
 git remote rm <name>            => reomve the connection
-git fetch origin                => connect 
-git restore --staged . 
-git restore . 
+git fetch origin                => make connection with remote server for others
+git restore --staged .          => restore after added 
+git restore .                   => restore modified file / undo
 git clean -f                    => delete file 
 git clean -fd                   => delete file/folder 
 
