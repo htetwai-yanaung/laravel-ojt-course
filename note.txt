@@ -1,26 +1,28 @@
-git init
-git add .
-git status
-git commit -m "first commit"
-git log
-git log --oneline
-git log --oneline -n 2
-git branch
-git branch <branch>
-git checkout main
-git checkout -b branch name
-git push -u origin branchName 
+git init                        => Initializing a new Git repository
+git add .                       => add all files
+git status                      => show whether committed or not
+git commit -m "first commit"    => add new commit
+git log                         => show list of commit
+git log --oneline               => short list of all commits
+git log --oneline -n 2          => short list of 2 commits
+git branch                      => show branch list
+git branch <branch>             => create new branch
+git checkout main               => switch between exist branches
+git checkout -b branch name     => create and switch to a new branch
+git push -u origin branchName   => push git repository to remove server 
 
-git stash 
-git stash apply 
+git stash                       => store uncommitted files 
+git stash apply                 => get uncommitted files
 
-git fetch origin 
+git remote -v                   => list of remote connections
+git remote rm <name>            => reomve the connection
+git fetch origin                => connect 
 git restore --staged . 
 git restore . 
-git clean -f => delete file 
-git clean -fd => delete file/folder 
+git clean -f                    => delete file 
+git clean -fd                   => delete file/folder 
 
-git reset --hard <commit code>
+git reset --hard <commit code>  => delete commit
 
 PULL REQUEST 
 1. git checkout <branch>
